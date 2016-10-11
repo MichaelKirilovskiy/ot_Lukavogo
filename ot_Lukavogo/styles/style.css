@@ -1,0 +1,131 @@
+body {
+    background-image: url("../images/cell.jpg");
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    text-align: center;
+    color: white;
+    border: 1px solid darkorange;
+}
+.bg {
+    display: inline-block;
+    background: url("../images/background_main.jpg") no-repeat;
+    width: 1280px;
+    height: auto;
+    border: 1px solid greenyellow;
+    font-size: 0;
+    vertical-align: top;
+}
+.empty {
+    display: inline-block;
+    width: 1280px;
+    height: 46px;
+    border: 1px solid green;
+}
+.main {
+    display: inline-block;
+    vertical-align: top;
+    width: 1280px;
+    height: 480px;
+
+}
+.left_side {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+    height: 480px;
+    text-align: left;
+}
+
+.center_side {
+     display: inline-block;
+     vertical-align: top;
+     width: 804px;
+     height: 480px;
+
+ }
+.right_side {
+    display: inline-block;
+    width: 246px;
+    height: 480px;
+
+}
+.logo_holder {
+    display: inline-block;
+    width: 230px;
+    height: 166px;
+    text-align: center;
+}
+.logo {
+    display: inline-block;
+    width: 230px;
+    height: 166px;
+}
+.button {
+    display: inline-block;
+    text-align: left;
+}
+.main_post {
+    width: 500px;
+    height: auto;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+
+}
+.pictograms {
+    display: inline-block;
+    text-align: right;
+    font-size: 0;
+    width: 200px;
+    height: 38px;
+
+}
+.pictogram {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin-right: 16px;
+}
+.insta {
+    margin-right: 0;
+}
+
+.gallery {
+    display: inline-block;
+    background-image: url("../images/gallery.jpg");
+    width: 1280px;
+    height: 158px;
+    vertical-align: middle;
+    border-top: 5px solid orange;
+    border-bottom: 3px solid orange;
+}
+.picture_photo {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+.green_light {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 8px;
+    border: 1px solid green;
+}
+.under_gallery {
+    display: inline-block;
+    background-image: url("../images/under_gallery.jpg");
+    width: 1280px;
+    height: auto;
+}
+.footer {
+    display: inline-block;
+    background-image: url("../images/footer.jpg");
+    width: 1280px;
+    height: 184px;
+}
