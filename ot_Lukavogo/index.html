@@ -4,7 +4,52 @@
     <meta charset="UTF-8">
     <meta name="keywords" content="photo, picture, novel">
     <title>Photo-blaster</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet"  type="text/css" href="styles/reset.css">
+    <link rel="stylesheet"  type="text/css" href="styles/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css' />
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                pager:false, <!-- убираем нумерацию страниц -->
+                mode:"vertical", <!-- вид смены слайдов fade -->
+                prevText:"", <!-- убираем текст Prev с прокрутки страниц -->
+                nextText:"", <!-- убираем текст Next с прокрутки страниц -->
+                auto:true,   <!-- автоматическое перелистываение страниц -->
+                autoHover:true, <!-- останока при наведении мышки-->
+                speed:2000,   <!-- время смены слайдов-->
+                pause:10000 /*длительность показа слайда*/
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider1').bxSlider({
+                slideWidth: 12,
+                minSlides: 2,
+                maxSlides: 12,
+                slideMargin: 100,
+                moveSlides: 1,
+                speed:5000,
+                pager:false,
+                auto:true
+            });
+        });
+    </script>
+
+    <!-- menu white - orange -->
+    <style>
+            a.button1 {  display: inline-block;  width: 127px;  height: 60px;  background: url("images/button_1.png") }
+            a.button1:hover { background: url("images/button_1_orange.png") }
+            a.button2 {  display: inline-block;  width: 230px;  height: 60px;  background: url("images/button_2.png") }
+            a.button2:hover { background: url("images/button_2_orange.png") }
+            a.button3 {  display: inline-block;  width: 153px;  height: 60px;  background: url("images/button_3.png") }
+            a.button3:hover { background: url("images/button_3_orange.png") }
+            a.button4 {  display: inline-block;  width: 179px;  height: 60px;  background: url("images/button_4.png") }
+            a.button4:hover { background: url("images/button_4_orange.png") }
+    </style>
 </head>
 <body>
 <div class="bg">
@@ -16,10 +61,10 @@
                 <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
             </div>
             <div class="menu">
-                <div class="button button1"><a href="menu/ot_ruki.html"><img src="images/button_1.png"></a></div>
-                <div class="button button2"><a href="menu/ot_photoapparata.html"><img src="images/button_2.png"></a></div>
-                <div class="button button3"><a href="menu/ot_baldi.html"><img src="images/button_3.png"></a></div>
-                <div class="button button4"><a href="menu/ot_lukavogo.html"><img src="images/button_4.png"></a></div>
+                <div class="button button1"><a class="button1" href="menu/ot_ruki.html"></a></div>
+                <div class="button button2"><a class="button2" href="menu/ot_photoapparata.html"></a></div>
+                <div class="button button3"><a class="button3" href="menu/ot_baldi.html"></a></div>
+                <div class="button button4"><a class="button4" href="menu/ot_lukavogo.html"></a></div>
             </div>
         </div>
         <div class="center_side">
@@ -38,7 +83,7 @@
         </div>
     </div>
     <div class="gallery">
-        <div class="green_light"><img src="images/green_lite.png"></div>
+       <!-- <div class="green_light"><img src="images/green_lite.png"></div>
         <div class="picture_photo photo1"><a href="images/pictures/01.jpg"><img src="images/pictures/ico/01.jpg"></a></div>
         <div class="picture_photo photo2"><a href="images/pictures/02.jpg"><img src="images/pictures/ico/02.jpg"></a></div>
         <div class="picture_photo photo3"><a href="images/pictures/03.jpg"><img src="images/pictures/ico/03.jpg"></a></div>
@@ -50,9 +95,77 @@
         <div class="picture_photo photo9"><a href="images/pictures/09.jpg"><img src="images/pictures/ico/09.jpg"></a></div>
         <div class="picture_photo photo10"><a href="images/pictures/10.jpg"><img src="images/pictures/ico/10.jpg"></a></div>
         <div class="picture_photo photo11"><a href="images/pictures/11.jpg"><img src="images/pictures/ico/11.jpg"></a></div>
-        <div class="green_light"><img src="images/green_lite.png"></div>
+        <div class="green_light"><img src="images/green_lite.png"></div>-->
+        <div class="slider1">
+            <div class="slide"><img src="images/pictures/ico/01.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/02.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/03.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/04.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/05.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/06.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/07.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/08.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/09.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/10.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/11.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/12.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/13.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/14.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/15.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/16.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/17.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/18.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/19.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/20.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/21.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/22.jpg" alt=""></div>
+            <div class="slide"><img src="images/pictures/ico/23.jpg" alt=""></div>
+        </div>
     </div>
     <div class="under_gallery">
+        <div class="slider">
+            <ul class="bxslider">
+                <li><img src="images/slide1.jpg" alt=""></li>
+                <li><img src="images/slide2.jpg" alt=""></li>
+                <li><img src="images/slide3.jpg" alt=""></li>
+                <li><img src="images/slide4.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div class="holder">
+            <div class="slider1">
+                <div class="slide slide_1"><img src="images/pictures/ico/01.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/02.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/03.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/04.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/05.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/06.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/07.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/08.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/09.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/10.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/11.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/12.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/13.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/14.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/15.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/16.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/17.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/18.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/19.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/20.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/21.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/22.jpg" alt=""></div>
+                <div class="slide"><img src="images/pictures/ico/23.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="under_gallery_text">
+            <h2>Телефон заряжен на полную, но в рюкзаке ещё парочка батарей; плотно затянуты кроссовки, и в кармане плавится какой-то энергетический батончик, со вкусом растаявшего шоколада; взгляд будто прикипел к экрану, а пальцы в безумной пляске отбивают африканские ритмы.
+            </h2>
+        </div>
+        <div class="under_gallery_text">
+            <h2>Телефон заряжен на полную, но в рюкзаке ещё парочка батарей; плотно затянуты кроссовки, и в кармане плавится какой-то энергетический батончик, со вкусом растаявшего шоколада; взгляд будто прикипел к экрану, а пальцы в безумной пляске отбивают африканские ритмы.
+            </h2>
+        </div>
     </div>
     <div class="footer">
     </div>
